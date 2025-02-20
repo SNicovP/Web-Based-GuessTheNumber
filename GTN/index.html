@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+        <h1>Welcome to Guess my Number!</h1>
+        <main>
+            <details class="rules-container">
+              <summary>Rules to the game</summary>
+      
+              <p>I'm thinking of a number between 1 and 100.</p>
+              <p>If your guess is more than 10 away from my number, I'll tell you you're COLD</p>
+              <p>If your guess is within 10 of my number, I'll tell you you're WARM</p>
+      
+              <p>If your guess is farther than your most recent guess, I'll say you're getting COLDER</p>
+              <p>If your guess is closer than your most recent guess, I'll say you're getting WARMER</p>
+              <p>At the end you will see how many guesses it took to guess my number</p>
+              <p>How quickly can you guess my number?</p>
+            </details>
+        
+            <h2>Do you want to Play?</h2>
+            <br>
+            <div class="form">
+                <label for="guessField">
+                    Enter a guess:
+                </label>
+        
+                <input type="text" 
+                       id="guessField" 
+                       class="guessField">
+                <input type="submit" 
+                       value="Submit guess" 
+                       class="guessSubmit" 
+                       id="submitguess">
+            </div class="results-container">
+            <p id="results-msg" class="results-msg" ></p>
+            </div>
+            <div>
+                <p id="guessListLast" class="guessListLast">   
+                </p>
+                <p id="guessList" class="guessList">                    
+                </p>        
+            </div>
+        
+            <div class="end-container">
+            <p id="end-msg"></p>
+            <button
+            type="submit"
+            class="reset-btn"
+            id="reset-btn"
+            style="display:none">Play Again?
+            </button>
+            <div>
+            
+        
+        
+            </div>
+
+        </main>
+
+    </body>
+    <script src="./script.js"></script>
+</html>

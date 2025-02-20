@@ -1,0 +1,26 @@
+html {
+    font-family: sans-serif;
+    width: 40%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: rgb(147, 241, 147);
+    color: lightcoral;
+    
+
+}
+
+button { 
+    background-color: lightcoral;
+    border-color: white;
+    color: lightgreen;
+}
+
+#submitguess { 
+    background-color: lightcoral;
+    border-color: white;
+    color: lightgreen;
+}
